@@ -17,19 +17,9 @@ yelpApi.post('/', textParser, function(req, res) {
   console.log(keyword);
   yelp.business(keyword)
   .then(function(result) {
-    res.send(result);
+    res.sendStatus(result.name);
   })
 
 });
-
-
-
-
-
-
-
-
-
-
 
 module.exports = yelpApi; 
