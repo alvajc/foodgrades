@@ -17,7 +17,17 @@ yelpApi.post('/', textParser, function(req, res) {
   console.log(keyword);
   yelp.business(keyword)
   .then(function(result) {
-    res.sendStatus(result.name);
+    console.log(result);
+    var object = {
+      name: result.name,
+      address: result.location.display_address,
+      phone: result.phone,
+      rating: result.rating,
+      reviewCount: result.review_count,
+      reviews: result.reviews[0].excerpt
+
+    }
+    res.send(object);
   })
 
 });
