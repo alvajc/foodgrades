@@ -13,9 +13,9 @@ var yelp = new Yelp({
 
 
 yelpApi.post('/', textParser, function(req, res) {
-  var keyword = req.body;
-  console.log(keyword);
-  yelp.business(keyword)
+  var businessSearch = req.body;
+  console.log(businessSearch);
+  yelp.business(businessSearch)
   .then(function(result) {
     console.log(result);
     var object = {
@@ -27,7 +27,7 @@ yelpApi.post('/', textParser, function(req, res) {
       reviews: result.reviews[0].excerpt
 
     }
-    res.send(object);
+      res.send(object);
   })
 
 });

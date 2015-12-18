@@ -4,6 +4,8 @@ var yelpApi = require('./js/yelp.js');
 
 app.use('/search', yelpApi);
 
+app.use('/images', express.static('images')); 
+
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
@@ -18,5 +20,7 @@ app.get('/js/default.js', function(req, res) {
 
 
 
-app.listen(1337);
-console.log('Server Up');
+
+
+
+app.listen(1337);;

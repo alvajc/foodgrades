@@ -7,8 +7,11 @@ search.addEventListener('click', function() {
       result.textContent = xhr.responseText;
     }
   }
-  var keyword = document.getElementById('keyword').value;
-  console.log(keyword);
+  var businessName = document.getElementById('businessName').value;
+  var businessCity = document.getElementById('businessCity').value;
+  var keywords = (businessName + " " + businessCity);
+  var businessSearch = keywords.replace(/\s+/g, '-').toLowerCase();
+  console.log(businessSearch);
   xhr.open('POST', '/search', true);
-  xhr.send(keyword);
+  xhr.send(businessSearch);
 }, false);
