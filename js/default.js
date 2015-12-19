@@ -3,10 +3,20 @@ search.addEventListener('click', function() {
   var xhr = new XMLHttpRequest();
   xhr.onload = function() {
     if(xhr.status === 200) {
-      result = document.getElementById('result');
-      result.textContent = xhr.responseText;
+    var yelpObject = xhr.responseText;
+    var yelp = JSON.parse(yelpObject);
+    console.log(yelp);
+    resultName.textContent = yelp.name;
+    resultAddress.textContent = yelp.address[0];
+    resultCity.textContent = yelp.address[1];
+    resultPhone.textContent = yelp.phone;
+    resultRating.textContent = yelp.rating;
+    resultReviews.textContent = yelp.reviewCount;
+    resultExcerpt.textContent = yelp.reviews;
+    resultUrl.textContent = yelp.url;
     }
-  }
+  };
+  
   var businessName = document.getElementById('businessName').value;
   var businessCity = document.getElementById('businessCity').value;
   var keywords = (businessName + " " + businessCity);
@@ -15,3 +25,4 @@ search.addEventListener('click', function() {
   xhr.open('POST', '/search', true);
   xhr.send(businessSearch);
 }, false);
+

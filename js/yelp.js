@@ -24,12 +24,12 @@ yelpApi.post('/', textParser, function(req, res) {
       phone: result.phone,
       rating: result.rating,
       reviewCount: result.review_count,
-      reviews: result.reviews[0].excerpt
-
-    }
-      res.send(object);
-  })
+      reviews: result.reviews[0].excerpt,
+      url: result.url
+  };
+    res.send(object);
+  });
 
 });
 
-module.exports = yelpApi; 
+module.exports = yelpApi;
