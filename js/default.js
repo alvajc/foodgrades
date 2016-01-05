@@ -1,5 +1,5 @@
 document.getElementById('search');
-search.addEventListener('click', function() {
+search.addEventListener('click', function(yelp) {
   var xhr = new XMLHttpRequest();
   xhr.onload = function() {
     if(xhr.status === 200) {
@@ -13,9 +13,11 @@ search.addEventListener('click', function() {
     resultRating.textContent = yelp.rating;
     resultReviews.textContent = yelp.reviewCount;
     resultExcerpt.textContent = yelp.reviews;
-    resultUrl.textContent = yelp.url;
+    var search = document.getElementById('searchResult');
+    search.setAttribute('class', 'show');
     }
   };
+
   
   var businessName = document.getElementById('businessName').value;
   var businessCity = document.getElementById('businessCity').value;
@@ -25,4 +27,3 @@ search.addEventListener('click', function() {
   xhr.open('POST', '/search', true);
   xhr.send(businessSearch);
 }, false);
-

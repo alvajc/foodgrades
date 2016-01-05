@@ -25,7 +25,6 @@ yelpApi.post('/', textParser, function(req, res) {
       rating: result.rating,
       reviewCount: result.review_count,
       reviews: result.reviews[0].excerpt,
-      url: result.url
   };
     res.send(object);
   });

@@ -1,0 +1,18 @@
+body {
+  font-family: lato, helvetica, sans-serif;
+}
+
+#letter {
+  color: #1921BB;
+}
+
+#search {
+  margin-top: 20px;
+  background-color: #1921BB;
+}
+
+@media (min-width: 568px) {
+        .sitename {
+    font-size: 100px;
+    }
+}

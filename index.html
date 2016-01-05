@@ -4,12 +4,15 @@
     <title>foodGRADES</title>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/default.css">
   </head>
   <body>
-   <!-- begin carousel --> 
+   
+   <!--- begin carousel --> 
+
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -35,52 +38,84 @@
           <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- end carousel -->
-    <!-- begin search box -->
+
+    <!--- end carousel -->
+
+    <!--- begin search box -->
+
     <div class="container">
+      <div class"row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h1 class="sitename">foodGR<span id="letter">A</span>DES</h1>
+        </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h3>Search your favorite restaurant and view<br>L.A. Department of Health inspection grades<br>plus Yelp ratings<br>All in one place.</h3>
+        </div>
+      </div>
+      </div>
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
-          <div class+"form-group">
-            <label for="businessName">ENTER BUSINESS NAME</label>
-            <input type="text" class="form-control" id="businessName" placeholder="Enter Business Name">
-            </div>
+          <div class="form-group text-center">
+            <label for="businessName">Search foodGRADES</label>
+            <input type="text" class="form-control text-center" id="businessName" placeholder="Enter Restaurant Name">
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <div class+"form-group">
-            <label for="businessCity">ENTER CITY</label>
-            <input type="text" class="form-control" id="businessCity" placeholder="Enter City">
+            
+            <input type="text" class="form-control text-center" id="businessCity" placeholder="Enter City">
           </div>
         </div>
-        <div class="row">
+      </div>
+      <div class="row">
         <div class="col-md-2 col-md-offset-5">
           <div class+"form-group">
             <button id="search" type="button" class="btn btn-primary center-block">Search</button>
           </div>
         </div>
       </div>
-      <div class-"row">
-        <div class="col-md-6 col-md-offset-3">
-          <div id="searchResult">
+    </div>
+
+    <!--- end search box -->
+
+    <!--- begin search result -->
+
+    <div class="container">
+      <div id="searchResult" class="hidden">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
             <h2 class="text-center">Your search results</h2>
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 id="resultName" class="text-center"></h2>
+            <h4 id="resultAddress" class="text-center"></h4>
+            <h4 id="resultCity" class="text-center"></h4>
+            <h4 id="resultPhone" class="text-center"></h4>
+            <h4 id="resultRating" class="text-center"></h4>
+            <div id="resultImage"></div>
+            <h4 id="resultReviews" class="text-center"></h4>
+            <h4 id="resultExcerpt" class="text-center"></h4>
+            <h4 id="resultLatitude" class="text-center"></h4>
+            <h4 id="resultLongitude" class="text-center"></h4>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <h2 id="resultName" class="text-center"></h2>
-          <div id="resultAddress" class="text-center"></div>
-          <div id="resultCity" class="text-center"></div>
-          <div id="resultPhone" class="text-center"></div>
-          <div id="resultRating" class="text-center"></div>
-          <div id="resultReviews" class="text-center"></div>
-          <div id="resultExcerpt" class="text-center"></div>
-          <div id="resultUrl" class="text-center"></div>
-        </div>
-      </div>
     </div>
-  <!-- end search box -->
+
+  <!--- end search result -->
+
+  <!--- begin map -->
+    <div id="map" style="opacity: 0"></div>
+
+
+
+  <!--- end map -->
+
     <script src="js/default.js"></script>
   </body>
 </html>
