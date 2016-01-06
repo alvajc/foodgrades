@@ -4,19 +4,19 @@ body {
 
 .jumbotron {
   background-image: url(/images/sandwich.jpg);
+  height: 1000px;
   
 }
 
 #info {
-  color: white;
-  font-size: 4vw;
+  font-size: 60px;
 }
 #text {
   color: white;
-  font-size: 9vw;
+  font-size: 8vw;
 }
 
-#letter {
+.letter {
   color: #1921BB;
 }
 
@@ -25,3 +25,10 @@ body {
   background-color: #1921BB;
 }
 
+.restInfo {
+  color: red;
+}
+
+#grade {
+  color: #1921BB;
+}
