@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>foodGRADES</title>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+    </style>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -25,7 +28,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
-          <p id="info">View health inspection grades and Yelp reviews</p>
+          <p id="info">View health inspection grades and <img src="images/yelp-logo-large@2x.png"> reviews for your favorite restaurants</p>
         </div>
       </div>
       <div class="row">
@@ -79,6 +82,7 @@
             <h4 id="resultExcerpt" class="text-center"></h4>
             <h4 id="resultLatitude" class="text-center"></h4>
             <h4 id="resultLongitude" class="text-center"></h4>
+            <button id="showMap" type="button" class="btn btn-primary center-block">Show on Map</button>
           </div>
         </div>
       </div>
@@ -87,7 +91,33 @@
   <!--- end search result -->
 
   <!--- begin map -->
-    <div id="map" style="opacity: 0"></div>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    var mapButton = document.getElementById('showMap');
+    var myLatLng = {lat: 33.983198, lng: -118.185804};
+      
+      function initMap() {
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map
+        });
+         google.maps.event.addDomListener(mapButton, 'click', initMap);
+        };
+     
+    </script>
+    <div id="map"></div>
+  
+    
+  
+ 
+    
+            
 
 
 

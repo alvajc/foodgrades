@@ -9,10 +9,10 @@ body {
 }
 
 #info {
-  font-size: 60px;
+  font-size: 50px;
 }
 #text {
-  color: white;
+  color: #C4C3C3;
   font-size: 8vw;
 }
 
@@ -23,6 +23,7 @@ body {
 #search {
   margin-top: 20px;
   background-color: #1921BB;
+  margin-bottom: 20px;
 }
 
 .restInfo {
@@ -31,4 +32,12 @@ body {
 
 #grade {
   color: #1921BB;
+}
+
+#map { 
+  height: 50%; 
+}
+
+#showMap {
+  margin-bottom: 20px;
 }
