@@ -1,3 +1,4 @@
+
 document.getElementById('search');
 search.addEventListener('click', function(yelp) {
   var xhr = new XMLHttpRequest();
@@ -13,6 +14,9 @@ search.addEventListener('click', function(yelp) {
     resultRating.textContent = yelp.rating;
     resultReviews.textContent = yelp.reviewCount;
     resultExcerpt.textContent = yelp.reviews;
+    resultLat.textContent = yelp.latitude;
+    resultLng.textContent = yelp.longitude;
+
     var search = document.getElementById('searchResult');
     search.setAttribute('class', 'show');
     }
@@ -27,3 +31,32 @@ search.addEventListener('click', function(yelp) {
   xhr.open('POST', '/search', true);
   xhr.send(businessSearch);
 }, false);
+
+
+
+var mapButton = document.getElementById('showMap');
+mapButton.addEventListener('click', function() {
+var latitude = document.getElementById('resultLat').textContent;
+var longitude = document.getElementById('resultLng').textContent;
+var lat = latitude;
+var lng = longitude;
+console.log(lat);
+console.log(lng);
+  var myLatLng = {lat: JSON.parse(latitude), lng: JSON.parse(longitude)};
+  console.log(myLatLng);
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    zoom: 18
+  });
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+  });
+
+}, false);
+

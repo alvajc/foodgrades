@@ -83,6 +83,7 @@
             <h4 id="resultLatitude" class="text-center"></h4>
             <h4 id="resultLongitude" class="text-center"></h4>
             <button id="showMap" type="button" class="btn btn-primary center-block">Show on Map</button>
+            
           </div>
         </div>
       </div>
@@ -91,26 +92,15 @@
   <!--- end search result -->
 
   <!--- begin map -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-    var mapButton = document.getElementById('showMap');
-    var myLatLng = {lat: 33.983198, lng: -118.185804};
-      
-      function initMap() {
-        
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map
-        });
-         google.maps.event.addDomListener(mapButton, 'click', initMap);
-        };
-     
+  <div class="hidden">
+    <div id="resultLat"></div>
+    <div id="resultLng"></div>
+  </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js">
     </script>
+  
+    
     <div id="map"></div>
   
     
