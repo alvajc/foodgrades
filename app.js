@@ -22,5 +22,6 @@ app.get('/js/map.js', function(req, res) {
   res.sendFile(__dirname + '/js/map.js');
 });
 
+
 app.listen(1337);
 console.log('Server Up');
