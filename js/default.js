@@ -16,7 +16,6 @@ search.addEventListener('click', function(yelp) {
     resultExcerpt.textContent = yelp.reviews;
     resultLat.textContent = yelp.latitude;
     resultLng.textContent = yelp.longitude;
-
     var search = document.getElementById('searchResult');
     search.setAttribute('class', 'show');
     }
@@ -36,6 +35,8 @@ search.addEventListener('click', function(yelp) {
 
 var mapButton = document.getElementById('showMap');
 mapButton.addEventListener('click', function() {
+var showMap = document.getElementById('map');
+showMap.setAttribute('class', 'show');
 var latitude = document.getElementById('resultLat').textContent;
 var longitude = document.getElementById('resultLng').textContent;
 var lat = latitude;
@@ -59,4 +60,5 @@ console.log(lng);
   });
 
 }, false);
+
 
