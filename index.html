@@ -5,6 +5,9 @@
     <style type="text/css">
       html, body { height: 100%; margin: 0; padding: 0; }
     </style>
+    <script
+      src="https://maps.googleapis.com/maps/api/js">
+    </script>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -75,15 +78,15 @@
             <h4 id="resultCity" class="text-center"></h4>
             <h4 id="resultPhone" class="text-center"></h4>
             <h3 id="grade" class="text-center">Restaurant Inspection Grade</h3>
-            <h3 class="restInfo text-center">Yelp Rating</h3>
+            <img class="center-block" src="images/yelp-logo-small@3x.png">
+            <h3 class="restInfo text-center">Rating</h3>
             <h4 id="resultRating" class="text-center"></h4>
-            <h3 class="restInfo text-center">Number of Yelp Reviews</h3>
+            <h3 class="restInfo text-center">Number of Reviews</h3>
             <h4 id="resultReviews" class="text-center"></h4>
             <h4 id="resultExcerpt" class="text-center"></h4>
             <h4 id="resultLatitude" class="text-center"></h4>
             <h4 id="resultLongitude" class="text-center"></h4>
             <button id="showMap" type="button" class="btn btn-primary center-block">Show on Map</button>
-            
           </div>
         </div>
       </div>
@@ -92,27 +95,15 @@
   <!--- end search result -->
 
   <!--- begin map -->
+
   <div class="hidden">
     <div id="resultLat"></div>
     <div id="resultLng"></div>
   </div>
-    <script
-      src="https://maps.googleapis.com/maps/api/js">
-    </script>
-  
-    
-    <div id="map"></div>
-  
-    
-  
- 
-    
-            
+  <div id="map" class="hidden"></div>
 
-
-
-  <!--- end map -->
-
+<!--- end map -->
+    <script src="js/scores.js"></script>
     <script src="js/default.js"></script>
   </body>
 </html>
