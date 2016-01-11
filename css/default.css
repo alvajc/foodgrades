@@ -1,18 +1,19 @@
 body {
   font-family: lato, helvetica, sans-serif;
+  
+background-image: url(/images/sandwich2.jpg); 
+background-repeat: no-repeat; 
+
 }
 
-.jumbotron {
-  background-image: url(/images/sandwich.jpg);
-  height: 1000px;
-  
-}
+
 
 #info {
+  color: white;
   font-size: 50px;
 }
 #text {
-  color: #C4C3C3;
+  color: white;
   font-size: 8vw;
 }
 
@@ -43,4 +44,9 @@ body {
 
 #showMap {
   margin-bottom: 20px;
+}
+
+#background {
+  background-color: rgba(212, 212, 212, 0.3);
+
 }

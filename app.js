@@ -24,4 +24,4 @@ app.get('/js/map.js', function(req, res) {
 
 
 app.listen(1337);
-console.log('Server Up');
+console.log('Server Up on localhost:1337');

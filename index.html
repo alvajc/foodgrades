@@ -19,7 +19,7 @@
    
 
     <!--- begin search box -->
-  <div class="jumbotron">
+  
     <div class="container">
       <div class"row">
         <div class="col-md-12 text-center">
@@ -27,11 +27,13 @@
         </div>
       </div>
     </div>
-  </div>
+  
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
-          <p id="info">View health inspection grades and <img src="images/yelp-logo-large@2x.png"> reviews for your favorite restaurants</p>
+          <div id="background">
+            <p id="info">View health inspection grades and <img src="images/yelp-logo-large@2x.png"> reviews for your favorite restaurants</p>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -71,7 +73,7 @@
            </div>
         </div>
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
+          <div class="col-md-4">
             <h3 class="restInfo text-center">Restaurant Info</h3>
             <h2 id="resultName" class="text-center"></h2>
             <h4 id="resultAddress" class="text-center"></h4>
@@ -87,6 +89,8 @@
             <h4 id="resultLatitude" class="text-center"></h4>
             <h4 id="resultLongitude" class="text-center"></h4>
             <button id="showMap" type="button" class="btn btn-primary center-block">Show on Map</button>
+            <div class="row">
+            </div>
           </div>
         </div>
       </div>
@@ -103,7 +107,7 @@
   <div id="map" class="hidden"></div>
 
 <!--- end map -->
-    <script src="js/scores.js"></script>
+    
     <script src="js/default.js"></script>
   </body>
 </html>

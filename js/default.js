@@ -43,7 +43,7 @@ var lat = latitude;
 var lng = longitude;
 console.log(lat);
 console.log(lng);
-  var myLatLng = {lat: JSON.parse(latitude), lng: JSON.parse(longitude)};
+  var myLatLng = {lat: JSON.parse(lat), lng: JSON.parse(lng)};
   console.log(myLatLng);
 
   // Create a map object and specify the DOM element for display.
