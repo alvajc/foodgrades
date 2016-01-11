@@ -36,8 +36,8 @@ background-repeat: no-repeat;
 }
 
 #map { 
-  height: 50%; 
-  width: 70%;
+  height: 600px; 
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,5 +48,12 @@ background-repeat: no-repeat;
 
 #background {
   background-color: rgba(212, 212, 212, 0.3);
+  padding: 0 15px 0 15px;
 
+}
+
+#searchResult {
+  background-color: rgba(212, 212, 212, 0.6);
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }

@@ -18,25 +18,8 @@ search.addEventListener('click', function(yelp) {
     resultLng.textContent = yelp.longitude;
     var search = document.getElementById('searchResult');
     search.setAttribute('class', 'show');
-    }
-  };
-
-  
-  var businessName = document.getElementById('businessName').value;
-  var businessCity = document.getElementById('businessCity').value;
-  var keywords = (businessName + " " + businessCity);
-  var businessSearch = keywords.replace(/\s+/g, '-').toLowerCase();
-  console.log(businessSearch);
-  xhr.open('POST', '/search', true);
-  xhr.send(businessSearch);
-}, false);
 
 
-
-var mapButton = document.getElementById('showMap');
-mapButton.addEventListener('click', function() {
-var showMap = document.getElementById('map');
-showMap.setAttribute('class', 'show');
 var latitude = document.getElementById('resultLat').textContent;
 var longitude = document.getElementById('resultLng').textContent;
 var lat = latitude;
@@ -58,7 +41,19 @@ console.log(lng);
     map: map,
     position: myLatLng,
   });
+    }
+  };
 
+  
+  var businessName = document.getElementById('businessName').value;
+  var businessCity = document.getElementById('businessCity').value;
+  var keywords = (businessName + " " + businessCity);
+  var businessSearch = keywords.replace(/\s+/g, '-').toLowerCase();
+  console.log(businessSearch);
+  xhr.open('POST', '/search', true);
+  xhr.send(businessSearch);
 }, false);
+
+
 
 
