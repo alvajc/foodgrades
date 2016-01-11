@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/alvajc/foodgrades#readme",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "csvtojson": "^0.5.1",
     "express": "^4.13.3",
+    "mongoose": "^4.3.4",
     "yelp": "^1.0.1"
   }
 }
