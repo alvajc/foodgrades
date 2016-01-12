@@ -1,13 +1,8 @@
 body {
   font-family: lato, helvetica, sans-serif;
-  
-background-image: url(/images/sandwich2.jpg); 
-background-repeat: no-repeat; 
-
+  background-image: url(/images/sandwich2.jpg); 
+  background-repeat: no-repeat; 
 }
-
-
-
 #info {
   color: white;
   font-size: 50px;
@@ -16,42 +11,36 @@ background-repeat: no-repeat;
   color: white;
   font-size: 8vw;
 }
-
 .letter {
   color: #1921BB;
 }
-
 #search {
   margin-top: 20px;
   background-color: #1921BB;
   margin-bottom: 20px;
 }
-
 .restInfo {
   color: red;
 }
-
 #grade {
   color: #1921BB;
 }
-
+#gradeHeader {
+  color: #1921BB;
+}
 #map { 
   height: 600px; 
   width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
-
 #showMap {
   margin-bottom: 20px;
 }
-
 #background {
   background-color: rgba(212, 212, 212, 0.3);
   padding: 0 15px 0 15px;
-
 }
-
 #searchResult {
   background-color: rgba(212, 212, 212, 0.6);
   margin-bottom: 30px;

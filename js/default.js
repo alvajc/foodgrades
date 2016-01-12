@@ -1,4 +1,3 @@
-
 document.getElementById('search');
 search.addEventListener('click', function(yelp) {
   var xhr = new XMLHttpRequest();
@@ -19,32 +18,46 @@ search.addEventListener('click', function(yelp) {
     var search = document.getElementById('searchResult');
     search.setAttribute('class', 'show');
 
+      xhr.onload = function() {
+      if(xhr.status === 200) {
+        var result = xhr.responseText;
+        console.log(result);
+        var score = JSON.parse(result);
+        grade.textContent = score.grade;
+      }
+    };
 
-var latitude = document.getElementById('resultLat').textContent;
-var longitude = document.getElementById('resultLng').textContent;
-var lat = latitude;
-var lng = longitude;
-console.log(lat);
-console.log(lng);
-  var myLatLng = {lat: JSON.parse(lat), lng: JSON.parse(lng)};
-  console.log(myLatLng);
+    var address = document.getElementById('resultAddress').textContent;
+    console.log(address);
+    var location = address.toUpperCase();
+    console.log(location);
+    xhr.open('POST', '/score', true);
+    xhr.send(location);
 
-  // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map'), {
+
+    var latitude = document.getElementById('resultLat').textContent;
+    var longitude = document.getElementById('resultLng').textContent;
+    var lat = latitude;
+    var lng = longitude;
+    console.log(lat);
+    console.log(lng);
+    var myLatLng = {lat: JSON.parse(lat), lng: JSON.parse(lng)};
+    console.log(myLatLng);
+
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
     scrollwheel: false,
     zoom: 18
   });
 
-  // Create a marker and set its position.
-  var marker = new google.maps.Marker({
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
     map: map,
     position: myLatLng,
-  });
-    }
-  };
-
-  
+    });
+  }
+};
   var businessName = document.getElementById('businessName').value;
   var businessCity = document.getElementById('businessCity').value;
   var keywords = (businessName + " " + businessCity);
@@ -53,6 +66,10 @@ console.log(lng);
   xhr.open('POST', '/search', true);
   xhr.send(businessSearch);
 }, false);
+
+
+
+
 
 
 
