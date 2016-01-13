@@ -68,13 +68,13 @@ body {
   height: 85px;
 }
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -200px; 
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -200px; 
 }
 .footer, .push {
-    height: 200px; 
+  height: 200px; 
 }
 #footer {
   background-color: #2C2C2C;
