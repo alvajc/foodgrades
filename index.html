@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
+    <div class="wrapper">
    <!--- begin search box -->
     <div class="container">
       <div class"row">
@@ -80,8 +81,8 @@
             <h3 class="restInfo text-center">Number of Reviews</h3>
             <h4 id="resultReviews" class="text-center"></h4>
             <h4 id="resultExcerpt" class="text-center"></h4>
-            <h4 id="resultLatitude" class="text-center"></h4>
-            <h4 id="resultLongitude" class="text-center"></h4>
+            <h4 class="restInfo text-center">See More</h4>
+            <a id="yelpUrl" href=""><img class="center-block" src="images/yelp_review_btn_red@2x.png"></a>
           </div>
           <div id="map" class="col-md-6 col-md-offset-1"> </div>
         </div>
@@ -93,7 +94,20 @@
     <div id="resultLat"></div>
     <div id="resultLng"></div>
   </div>
+  <div class="push"></div>
+</div>
 <!--- end map -->
     <script src="js/default.js"></script>
+    <div class="footer" id="footer">
+      <div class="col-md-2 col-md-offset-3">
+        <img id="healthLogo" class="image-responsive" src="images/health.png">
+    </div>
+    <div class="col-md-2">
+      <img id="googleLogo" class="image-responsive" src="images/google.png">
+    </div>
+    <div class="col-md-2">
+      <img id="yelpLogo" class="image-responsive" src="images/yelp_powered_btn_light@2x.png">
+    </div>
+    </div>
   </body>
 </html>

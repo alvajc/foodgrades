@@ -26,8 +26,10 @@ yelpApi.post('/', textParser, function(req, res) {
       reviewCount: result.review_count,
       reviews: result.reviews[0].excerpt,
       latitude: result.location.coordinate.latitude,
-      longitude: result.location.coordinate.longitude
+      longitude: result.location.coordinate.longitude,
+      url: result.url
   };
+    console.log(object);
     res.send(object);
   });
 

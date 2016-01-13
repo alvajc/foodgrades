@@ -27,7 +27,7 @@ body {
 }
 #grade {
   color: #1921BB;
-  font-size: 60px;
+  font-size: 50px;
 }
 #gradeHeader {
   color: #1921BB;
@@ -42,11 +42,44 @@ body {
   margin-bottom: 20px;
 }
 #background {
-  background-color: rgba(212, 212, 212, 0.3);
+  background-color: rgba(212, 212, 212, 0.5);
   padding: 0 15px 0 15px;
+  border-radius: 10pt;
 }
 #searchResult {
-  background-color: rgba(212, 212, 212, 0.6);
+  background-color: rgba(212, 212, 212, 0.7);
   margin-bottom: 30px;
   padding-bottom: 20px;
+  border-radius: 10pt;
 }
+#yelpLogo {
+  margin-top: 55px;
+}
+#googleLogo {
+  height: 90px;
+  width: 250px;
+  margin-top: 50px;
+}
+#healthLogo {
+  margin-top: 40px;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 10pt;
+  height: 85px;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -200px; 
+}
+.footer, .push {
+    height: 200px; 
+}
+#footer {
+  background-color: #2C2C2C;
+}
+
+
+
+
