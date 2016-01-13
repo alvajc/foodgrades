@@ -26,6 +26,5 @@ yelpApi.post('/', textParser, function(req, res) {
   };
       res.send(object);
   });
-
 });
 module.exports = yelpApi;
