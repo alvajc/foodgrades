@@ -14,6 +14,9 @@ body {
 .letter {
   color: #1921BB;
 }
+#searchHeader {
+  color: white;
+}
 #search {
   margin-top: 20px;
   background-color: #1921BB;
@@ -24,12 +27,13 @@ body {
 }
 #grade {
   color: #1921BB;
+  font-size: 60px;
 }
 #gradeHeader {
   color: #1921BB;
 }
 #map { 
-  height: 600px; 
+  height: 650px; 
   width: 700px;
   margin-left: auto;
   margin-right: auto;

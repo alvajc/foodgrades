@@ -22,8 +22,8 @@ search.addEventListener('click', function(yelp) {
       if(xhr.status === 200) {
         var result = xhr.responseText;
         console.log(result);
-        var score = JSON.parse(result);
-        grade.textContent = score.grade;
+        var score = result;
+        grade.textContent = score;
       }
     };
 
