@@ -9,13 +9,15 @@ body {
 }
 #text {
   color: white;
-  font-size: 8vw;
+  font-size: 6vw;
 }
 .letter {
   color: #1921BB;
 }
 #searchHeader {
   color: white;
+  font-size: 40px;
+  margin-top: 50px;
 }
 #search {
   margin-top: 20px;
@@ -24,30 +26,27 @@ body {
 }
 .restInfo {
   color: red;
+  font-size: 30px;
+}
+.searchInfo {
+  color: white;
+  font-size: 30px;
 }
 #grade {
-  color: #1921BB;
+  color: white;
   font-size: 50px;
 }
-#gradeHeader {
-  color: #1921BB;
-}
 #map { 
-  height: 650px; 
-  width: 700px;
+  height: 610px; 
+  width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 #showMap {
   margin-bottom: 20px;
 }
-#background {
-  background-color: rgba(212, 212, 212, 0.5);
-  padding: 0 15px 0 15px;
-  border-radius: 10pt;
-}
 #searchResult {
-  background-color: rgba(212, 212, 212, 0.7);
+  
   margin-bottom: 30px;
   padding-bottom: 20px;
   border-radius: 10pt;
@@ -72,12 +71,7 @@ body {
   height: auto !important;
   height: 100%;
   margin: 0 auto -200px; 
-}
-.footer, .push {
-  height: 200px; 
-}
-#footer {
-  background-color: #2C2C2C;
+  background-color: rgba(61, 61, 61, 0.8);
 }
 
 
