@@ -3,13 +3,13 @@ body {
   background-image: url(/images/sandwich2.jpg); 
   background-repeat: no-repeat; 
 }
-#info {
-  color: white;
-  font-size: 50px;
-}
 #text {
   color: white;
   font-size: 6vw;
+}
+#info {
+  color: white;
+  font-size: 50px;
 }
 .letter {
   color: #1921BB;
