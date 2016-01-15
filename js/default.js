@@ -1,3 +1,5 @@
+var map = document.getElementById('map');
+
 document.getElementById('search');
 search.addEventListener('click', function(yelp) {
   var xhr = new XMLHttpRequest();
@@ -33,7 +35,7 @@ search.addEventListener('click', function(yelp) {
       var lat = latitude;
       var lng = longitude;
       var myLatLng = {lat: JSON.parse(lat), lng: JSON.parse(lng)};
-      var map = new google.maps.Map(document.getElementById('map'), {
+      map = new google.maps.Map(map, {
       center: myLatLng,
       scrollwheel: false,
       zoom: 18
@@ -51,9 +53,16 @@ search.addEventListener('click', function(yelp) {
       xhr.open('POST', '/search', true);
       xhr.send(businessSearch);
   }, false);
-
-
-
+    google.maps.event.addDomListener(map, 'resize', function() {
+      var latitude = document.getElementById('resultLat').textContent;
+      var longitude = document.getElementById('resultLng').textContent;
+      var lat = latitude;
+      var lng = longitude;
+      var myLatLng = {lat: JSON.parse(lat), lng: JSON.parse(lng)};
+      var center = myLatLng;
+      console.log(center);
+      map.setCenter(center);
+});
 
 
 
