@@ -57,12 +57,10 @@ body {
 }
 
 .searchInfo {
-  color: white;
   font-size: 30px;
 }
 
 #grade {
-  color: white;
   font-size: 50px;
 }
 
@@ -81,7 +79,12 @@ body {
   padding-bottom: 20px;
   border-radius: 10pt;
 }
-
-
+.glyphicon {
+  color: white;
+  margin-top: 17px;
+}
+.fa {
+  color: white;
+}
 
 
