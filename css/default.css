@@ -1,76 +1,85 @@
 body {
   font-family: lato, helvetica, sans-serif;
-  background-image: url(/images/sandwich2.jpg); 
-  background-repeat: no-repeat; 
 }
+.navbar {
+  background-color: #282626;
+}
+#brand {
+  color: white;
+}
+.jumboMain {
+  background-image: url(../images/sandwich2.jpg);
+  height: 800px;
+}
+
+.jumboFeature {
+  background-color: #282626;
+}
+
 #text {
-  color: white;
   font-size: 6vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-#info {
+
+.logos {
+  height: 210px;
+  width: 210px;
+}
+
+.features {
   color: white;
+}
+
+#info {
   font-size: 50px;
 }
+
 .letter {
   color: #1921BB;
 }
+
 #searchHeader {
   color: white;
   font-size: 40px;
   margin-top: 50px;
 }
+
 #search {
   margin-top: 20px;
   background-color: #1921BB;
   margin-bottom: 20px;
 }
+
 .restInfo {
   color: red;
   font-size: 30px;
 }
+
 .searchInfo {
   color: white;
   font-size: 30px;
 }
+
 #grade {
   color: white;
   font-size: 50px;
 }
+
 #map { 
   height: 500px; 
   width: 100%;
   margin: 50px auto 20px auto;
 }
+
 #showMap {
   margin-bottom: 20px;
 }
+
 #searchResult {
-  
   margin-bottom: 30px;
   padding-bottom: 20px;
   border-radius: 10pt;
-}
-#yelpLogo {
-  margin-top: 55px;
-}
-#googleLogo {
-  height: 90px;
-  width: 250px;
-  margin-top: 50px;
-}
-#healthLogo {
-  margin-top: 40px;
-  margin-left: 50px;
-  background-color: white;
-  border-radius: 10pt;
-  height: 85px;
-}
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -200px; 
-  background-color: rgba(61, 61, 61, 0.8);
 }
 
 

@@ -16,7 +16,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
-    <div class="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a id="brand" class="navbar-brand" href="#">foodGRADES</a>
+      </div>
+    </nav>
+    <div class="jumbotron jumboMain">
+    </div>
     <div class="container">
       <div class"row">
         <div class="col-md-12 text-center">
@@ -24,14 +30,25 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1 text-center">
-          <div id="background">
-            <p id="info">View health inspection grades and <img src="images/yelp-logo-large@2x.png"> reviews for your favorite restaurants</p>
+    <div class="jumbotron jumboFeature">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="img-rounded center-block logos" src="images/grade.png">
+            <h2 class="features text-center">View current Health Dept. inspection grade</h2>
+          </div>
+          <div class="col-md-4">
+            <img class="img-rounded center-block" src="images/yelp-logo-large@3x.png">
+            <h2 class="features text-center">Check Yelp reviews for your favorite restaurants</h2>
+          </div>
+          <div class="col-md-4">
+            <img class="img-rounded center-block logos" src="images/mapIcon.png">
+            <h2 class="features text-center">Get location and directions easily with Google Maps</h2>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h2 id="searchHeader" class="text-center">Find foodGRADES</h2>
@@ -93,7 +110,6 @@
       <div id="resultLat"></div>
       <div id="resultLng"></div>
     </div>
-  </div>
   </div>
   <script src="js/default.js"></script>
   </body>
