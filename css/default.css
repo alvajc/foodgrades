@@ -6,7 +6,14 @@ body {
 }
 #brand {
   color: white;
+  font-size: 30px;
 }
+
+.social {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
 .jumboMain {
   background-image: url(../images/sandwich2.jpg);
   height: 800px;
@@ -68,10 +75,7 @@ body {
   height: 500px; 
   width: 100%;
   margin: 50px auto 20px auto;
-}
 
-#showMap {
-  margin-bottom: 20px;
 }
 
 #searchResult {
