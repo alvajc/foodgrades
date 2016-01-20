@@ -6,7 +6,7 @@ body {
 }
 #brand {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .social {
@@ -15,18 +15,24 @@ body {
 }
 
 .jumboMain {
-  background-image: url(../images/sandwich2.jpg);
-  height: 800px;
+  background-image: url(../images/sandwich.jpg);
+  background-size: cover;
+  height: 900px;
+}
+
+#searchDiv {
+  background: rgba(4, 3, 3, 0.7);
 }
 
 .jumboFeature {
-  background-color: #282626;
+  background-color: rgba(4, 3, 3, 0.9);
 }
 
 #text {
   font-size: 6vw;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom:350px;
+  color: white;
 }
 
 .logos {
@@ -47,15 +53,12 @@ body {
 }
 
 #searchHeader {
-  color: white;
   font-size: 40px;
   margin-top: 50px;
 }
 
 #search {
-  margin-top: 20px;
   background-color: #1921BB;
-  margin-bottom: 20px;
 }
 
 .restInfo {
@@ -75,6 +78,7 @@ body {
   height: 500px; 
   width: 100%;
   margin: 50px auto 20px auto;
+  border-radius: 10px;
 
 }
 
@@ -83,12 +87,16 @@ body {
   padding-bottom: 20px;
   border-radius: 10pt;
 }
+
 .glyphicon {
   color: white;
   margin-top: 17px;
 }
+
 .fa {
   color: white;
 }
+
+
 
 
