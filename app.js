@@ -8,6 +8,5 @@ app.use('/images', express.static('images'));
 
 app.use(express.static('./'));
 
-
 app.listen(1337);
 console.log('Listening on localhost:1337');
