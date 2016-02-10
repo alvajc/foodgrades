@@ -1,6 +1,10 @@
 {
   "name": "foodgrades",
   "version": "1.0.0",
+  "engines": {
+    "node": "5.4.1",
+    "npm": "3.3.12"
+  },
   "description": "It's a site for users who want to search restaurant health dept. inspection grades.",
   "main": "app.js",
   "scripts": {
