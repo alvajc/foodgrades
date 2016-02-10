@@ -1,4 +1,7 @@
 # foodgrades
+
+https://foodgrades.herokuapp.com/
+
 It's a site for users who want to search restaurant health dept. inspection grades.
 ![alt tag](https://raw.githubusercontent.com/alvajc/foodgrades/master/images/screenshots/foodgrades1.png)
 
