@@ -23,9 +23,10 @@
   "homepage": "https://github.com/alvajc/foodgrades#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
+    "bower": "^1.7.7",
     "csvtojson": "^0.5.1",
     "express": "^4.13.3",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "mongoose": "^4.3.4",
     "yelp": "^1.0.1"
   }
