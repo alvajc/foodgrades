@@ -4,7 +4,8 @@
   "description": "It's a site for users who want to search restaurant health dept. inspection grades.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

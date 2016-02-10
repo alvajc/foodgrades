@@ -13,6 +13,7 @@ yelpApi.post('/', textParser, function(req, res) {
   var businessSearch = req.body;
   yelp.business(businessSearch)
   .then(function(result) {
+    console.log(result);
     var object = {
       name: result.name,
       address: result.location.display_address,

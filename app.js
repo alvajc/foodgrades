@@ -8,5 +8,6 @@ app.use('/score', scoreApi);
 app.use('/images', express.static('images'));
 app.use(express.static('./'));
 
-app.listen(1337);
+var port = process.env.PORT || 3000;
+app.listen(port);
 console.log('Listening on localhost:1337');
