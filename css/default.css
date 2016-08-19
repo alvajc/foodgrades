@@ -15,7 +15,6 @@ body {
 }
 
 .jumboMain {
-  background-image: url(../images/sandwich.jpg);
   background-size: cover;
   height: 900px;
 }
@@ -30,9 +29,8 @@ body {
 
 #text {
   font-size: 6vw;
-  margin-top: 100px;
-  margin-bottom:480px;
-  color: white;
+  margin-top: 20px;
+  color: black;
 }
 
 .logos {
@@ -95,6 +93,9 @@ body {
 
 .fa {
   color: white;
+}
+.featureText {
+  font-size: 2em;
 }
 
 
